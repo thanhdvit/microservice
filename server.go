@@ -25,9 +25,8 @@ func (g *Greeter) Start() error {
 	if err != nil {
 		return err
 	}
-	//fmt.Println("%v", pb)
 	grpcServer := grpc.NewServer()
-	//pb.RegisterGreeterServer(grpcServer, g)
+	pb.RegisterGreeterServer(grpcServer, g)
 	grpcServer.Serve(lis)
 	return nil
 }

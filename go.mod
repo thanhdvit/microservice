@@ -1,5 +1,8 @@
-module github.com/thanhdvit/micrservice
+module github.com/thanhdvit/microservice
 
 go 1.13
 
-require google.golang.org/grpc v1.23.0
+require (
+	github.com/golang/protobuf v1.3.2
+	google.golang.org/grpc v1.23.0
+)
